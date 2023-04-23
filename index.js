@@ -56,34 +56,34 @@ const questions = () => {
 
 // TODO: Create a function to write README file
 const writeToFile = ({Project, Description, Github, Email, Tests, Installation, Usage, Contributing, Badges, License}) =>
-    `# Name
-    ${Project}
+`# Name
+${Project}
 
-    # Description
-    ${Description, Github, Email}
+## Description
+${Description, Github, Email}
 
-    Badges
-    ${Badges}
+## Badges
+${Badges}
 
-    Tests
-    ${Tests}
+## Tests
+${Tests}
 
-    Installation
-    ${Installation}
+## Installation
+${Installation}
 
-    Usage
-    ${Usage}
+## Usage
+${Usage}
 
-    Contributing
-    ${Contributing}
+## Contributing
+${Contributing}
 
-    License
-    ${License}`;
+## License
+${License}`;
 
 // TODO: Create a function to initialize app
 const init = () => { 
     questions()
-    .then((answers) => fs.writeFile('Example.md', writeToFile(answers),
+    .then((answers) => fs.writeFile('Quality README.md', writeToFile(answers),
     (err) => {
         if (err)
           console.log(err);
