@@ -63,10 +63,21 @@ ${Project}
 ${Description}
 
 ## Questions
-${Questions, Github, Email}
+${Questions}, ${Github}, ${Email}
 
 ## Badges
 ${Badges}
+
+## Table of Contents
+[Name](#Name)
+[Description](##Description)
+[Questions](##Questions)
+[Badges](##Badges)
+[Tests](##Tests)
+[Installation](#Installation)
+[Usage](##Usage)
+[Contributing](##Contributing)
+[License](##License)
 
 ## Tests
 ${Tests}
