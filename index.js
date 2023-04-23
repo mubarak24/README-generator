@@ -55,12 +55,15 @@ const questions = () => {
 };
 
 // TODO: Create a function to write README file
-const writeToFile = ({Project, Description, Github, Email, Tests, Installation, Usage, Contributing, Badges, License}) =>
+const writeToFile = ({Project, Description, Github, Email, Tests, Installation, Usage, Contributing, Badges, License, Questions}) =>
 `# Name
 ${Project}
 
 ## Description
-${Description, Github, Email}
+${Description}
+
+## Questions
+${Questions, Github, Email}
 
 ## Badges
 ${Badges}
