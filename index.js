@@ -55,31 +55,42 @@ const questions = () => {
 };
 
 // TODO: Create a function to write README file
-const writeToFile = ({Project, Description, Github, Email, Tests, Installation, Usage, Contributing, Badges, license}) =>
-    Name
+const writeToFile = ({Project, Description, Github, Email, Tests, Installation, Usage, Contributing, Badges, License}) =>
+    `# Name
     ${Project}
-    Description
+
+    # Description
     ${Description, Github, Email}
+
     Badges
     ${Badges}
+
     Tests
     ${Tests}
+
     Installation
     ${Installation}
+
     Usage
     ${Usage}
+
     Contributing
     ${Contributing}
+
     License
-    ${License};
+    ${License}`;
 
 // TODO: Create a function to initialize app
 const init = () => { 
-    promptUser()
-    .then((answers) => writeFile('README.md', writeToFile(answers)))
-    .then(() => console.log('Successfully wrote to README.md'))
-    .catch((err) => console.error(err));
-};
+    questions()
+    .then((answers) => fs.writeFile('Example.md', writeToFile(answers),
+    (err) => {
+        if (err)
+          console.log(err);
+        else {
+          console.log("File written successfully\n");
+        }
+      }))}
 
 // Function call to initialize app
 init();
