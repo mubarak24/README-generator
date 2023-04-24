@@ -63,7 +63,7 @@ ${Project}
 ${Description}
 
 ## Questions
-${Questions}, ${Github}, ${Email}
+${Questions}, https://github.com/${Github}, ${Email}
 
 ## Badges
 ${Badges}
